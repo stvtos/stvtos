@@ -5,6 +5,11 @@ body {
 .jumbotron {
     padding-top: 50px;
     margin-top: 75px;
+    /* This is for ie8 and below */
+    background: rgba(0, 0, 0, 0.2);
+    posistion: relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
 }
 
 #home {
@@ -22,11 +27,15 @@ body {
 }
 
 .intro-header {
-    background: url('../images/ny.jpg') center;
+    background: url('../images/ny.jpg') center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     height: 30%;
     width: 100%;
+}
+
+.container .jumbotron {
+    border-radius: 0px;
 }
