@@ -1,0 +1,32 @@
+body {
+    background: url('../images/darkbg.jpg') repeat center center fixed;
+}
+
+.jumbotron {
+    padding-top: 50px;
+    margin-top: 75px;
+}
+
+#home {
+    margin-bottom: 450px;
+}
+
+#slideshow {
+    padding-top: 75px;
+    margin-top: 200px;
+    padding-bottom: 75px;
+}
+
+.navbar-collapse {
+    margin-bottom: 50px, color="white";
+}
+
+.intro-header {
+    background: url('../images/ny.jpg') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 30%;
+    width: 100%;
+}

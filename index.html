@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Justin Braine"> </head>
 
 <body background="#" data-spy="scroll" data-target=".navbar">
@@ -19,7 +20,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="spy-scroll-id">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#profile">About</a></li>
+                    <li><a href="#slideshow">About</a></li>
                     <!--    <li class="dropdown"> <a href="dropdown-menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
@@ -35,42 +36,47 @@
             </div>
         </div>
     </nav>
-    <section id="home" class="container container section text-center">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="jumbotron page-header" align="center">
-                        <h2>Some Stupid Shit<br><small>By Justin B</small></h2>
-                        <p><a class="btn btn-danger btn-medium page-scroll" href="#profile">Enter <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+    <header class="intro-header">
+        <section id="home" class="container container section text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="jumbotron page-header" align="center">
+                            <h2>Some Stupid Shit<br><small>By Justin B</small></h2>
+                            <p><a class="btn btn-danger btn-medium page-scroll" href="#slideshow">Enter <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </header>
+    <section id="profile" class="container container section text-center">
         <div class="container container-fluid" align="center">
             <div class="row">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="slideshow" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideshow" data-slide-to="1"></li>
+                        <li data-target="#slideshow" data-slide-to="2"></li>
+                        <li data-target="#slideshow" data-slide-to="3"></li>
                     </ol>
+                    <h1>What is this shit</h1>
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active"> <img src="1.jpg" class="image-responsive" alt="Chania"> </div>
-                        <div class="item"> <img src="1.jpg" alt="Chania" class="image-responsive"> </div>
-                        <div class="item"> <img src="2.jpg" alt="Flower" class="image-responsive"> </div>
-                        <div class="item"> <img src="4.jpg" alt="Flower" class="image-responsive"> </div>
+                    <div class="container container-fluid" id="carol">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active"> <img src="images/1.jpg" class="image-responsive" alt="Chania"> </div>
+                            <div class="item"> <img src="images/1.jpg" alt="Chania" class="image-responsive"> </div>
+                            <div class="item"> <img src="images/2.jpg" alt="Flower" class="image-responsive"> </div>
+                            <div class="item"> <img src="images/4.jpg" alt="Flower" class="image-responsive"> </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                        <a class="right carousel-control" href="#slideshow" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
                     </div>
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="profile" class="container container section text-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam congue nibh sapien, at vestibulum arcu faucibus a. Curabitur quis egestas nunc. Suspendisse faucibus, leo in fermentum convallis, diam nisl semper lorem, in semper mi lorem et dolor. Morbi consectetur magna sollicitudin, convallis diam eu, lacinia dui. Maecenas in neque pulvinar, lobortis ante ut, feugiat velit. Donec luctus, lectus sed placerat imperdiet, dolor elit imperdiet sapien, sit amet tincidunt urna elit eu lectus. Nam ac ante viverra libero imperdiet volutpat id in est. Donec congue tempus sem a fringilla. Praesent consequat quam tempor vehicula tempus. Maecenas mauris arcu, congue viverra quam sed, fermentum maximus lorem. Morbi maximus finibus dapibus. Nulla eu molestie massa, sed placerat lorem. Praesent et scelerisque ipsum. Praesent quis mi non ante venenatis lacinia non non eros. Ut sit amet urna ac sem porttitor ultricies at non velit. In pretium pharetra eros, sed venenatis tellus faucibus non. Integer consequat, nulla sit amet congue posuere, arcu purus porta mi, at posuere tortor felis ac est. Phasellus malesuada nulla a ipsum maximus euismod. Duis porttitor efficitur nisi at faucibus. Aliquam luctus quam non justo posuere consequat. Sed gravida pretium dui, sed interdum purus varius quis. Ut faucibus, nibh sit amet dignissim fringilla, magna est ullamcorper felis, eu euismod felis augue vitae mauris. Aenean augue urna, mollis fringilla tortor id, congue consequat lorem. Ut finibus placerat diam, sit amet blandit nibh consequat a. Sed nec varius quam, in laoreet magna. Morbi aliquet auctor lorem at consectetur. Etiam interdum velit ut dapibus viverra. Vivamus viverra gravida vulputate. Etiam lobortis consequat iaculis. Vivamus sed vulputate sem. Morbi eget fringilla quam, at dapibus lectus. Vestibulum auctor ultricies iaculis. Proin vehicula lacus at odio maximus condimentum. Mauris bibendum dui a cursus varius. Praesent vitae tellus libero. Donec pharetra lectus egestas sapien tincidunt, vel blandit ligula iaculis. Cras congue magna et turpis vehicula, sit amet porta magna interdum. Donec aliquet lectus tellus, nec placerat eros convallis non. Pellentesque imperdiet nunc sit amet laoreet fringilla. Sed tincidunt nulla ut enim aliquam tempor. Quisque risus ante, facilisis vel tincidunt vitae, dapibus eget sem. Vestibulum rhoncus magna suscipit enim placerat sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sagittis nisl vel diam congue, vitae pharetra elit lacinia. Duis in nunc at tortor aliquet porta.</p>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam congue nibh sapien, at vestibulum arcu faucibus a. Curabitur quis egestas nunc. Suspendisse faucibus, leo in fermentum convallis, diam nisl semper lorem, in semper mi lorem et dolor. Morbi consectetur magna sollicitudin, convallis diam eu, lacinia dui. Maecenas in neque pulvinar, lobortis ante ut, feugiat velit. Donec luctus, lectus sed placerat imperdiet, dolor elit imperdiet sapien, sit amet tincidunt urna elit eu lectus. Nam ac ante viverra libero imperdiet volutpat id in est. Donec congue tempus sem a fringilla. Praesent consequat quam tempor vehicula tempus. Maecenas mauris arcu, congue viverra quam sed, fermentum maximus lorem. Morbi maximus finibus dapibus. Nulla eu molestie massa, sed placerat lorem. Praesent et scelerisque ipsum. Praesent quis mi non ante venenatis lacinia non non eros. Ut sit amet urna ac sem porttitor ultricies at non velit. In pretium pharetra eros, sed venenatis tellus faucibus non. Integer consequat, nulla sit amet congue posuere, arcu purus porta mi, at posuere tortor felis ac est. Phasellus malesuada nulla a ipsum maximus euismod. Duis porttitor efficitur nisi at faucibus. Aliquam luctus quam non justo posuere consequat. Sed gravida pretium dui, sed interdum purus varius quis. Ut faucibus, nibh sit amet dignissim fringilla, magna est ullamcorper felis, eu euismod felis augue vitae mauris. Aenean augue urna, mollis fringilla tortor id, congue consequat lorem. Ut finibus placerat diam, sit amet blandit nibh consequat a. Sed nec varius quam, in laoreet magna. Morbi aliquet auctor lorem at consectetur. Etiam interdum velit ut dapibus viverra. Vivamus viverra gravida vulputate. Etiam lobortis consequat iaculis. Vivamus sed vulputate sem. Morbi eget fringilla quam, at dapibus lectus. Vestibulum auctor ultricies iaculis. Proin vehicula lacus at odio maximus condimentum. Mauris bibendum dui a cursus varius. Praesent vitae tellus libero. Donec pharetra lectus egestas sapien tincidunt, vel blandit ligula iaculis. Cras congue magna et turpis vehicula, sit amet porta magna interdum. Donec aliquet lectus tellus, nec placerat eros convallis non. Pellentesque imperdiet nunc sit amet laoreet fringilla. Sed tincidunt nulla ut enim aliquam tempor. Quisque risus ante, facilisis vel tincidunt vitae, dapibus eget sem. Vestibulum rhoncus magna suscipit enim placerat sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sagittis nisl vel diam congue, vitae pharetra elit lacinia. Duis in nunc at tortor aliquet porta. </p>
     </section>
