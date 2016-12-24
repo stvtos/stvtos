@@ -4,8 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="HandheldFriendly" content="true">
-    <title>IDK</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Template</title>
+    <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -13,27 +15,23 @@
 
 <body background="#" data-spy="scroll" data-target=".navbar">
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html">Home</a> </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="spy-scroll-id">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#slideshow">About</a></li>
-                    <!--    <li class="dropdown"> <a href="dropdown-menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li> !-->
-                </ul>
-            </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html">Home</a> </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="spy-scroll-id">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#profile">About</a></li>
+                <li class="dropdown"> <a href="dropdown-menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Github</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
     <header class="intro-header">
@@ -42,8 +40,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="jumbotron " align="center">
-                            <h2>Some Stupid Shit<br><small>By Justin B</small></h2>
-                            <p><a class="btn btn-danger btn-medium page-scroll" href="#slideshow">Enter <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+                            <h2>Some Stupid Site Thing<br><small>By Justin B</small></h2>
+                            <p>
+                                <a href="#slideshow">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect"> Enter <span class="glyphicon glyphicon-chevron-right"></span> </button>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +63,7 @@
                         <li data-target="#slideshow" data-slide-to="2"></li>
                         <li data-target="#slideshow" data-slide-to="3"></li>
                     </ol>
-                    <h1>What is this shit</h1>
+                    <h1>What is this??</h1>
                     <!-- Wrapper for slides -->
                     <div class="container container-fluid" id="carol">
                         <div class="carousel-inner" role="listbox">
@@ -80,8 +82,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam congue nibh sapien, at vestibulum arcu faucibus a. Curabitur quis egestas nunc. Suspendisse faucibus, leo in fermentum convallis, diam nisl semper lorem, in semper mi lorem et dolor. Morbi consectetur magna sollicitudin, convallis diam eu, lacinia dui. Maecenas in neque pulvinar, lobortis ante ut, feugiat velit. Donec luctus, lectus sed placerat imperdiet, dolor elit imperdiet sapien, sit amet tincidunt urna elit eu lectus. Nam ac ante viverra libero imperdiet volutpat id in est. Donec congue tempus sem a fringilla. Praesent consequat quam tempor vehicula tempus. Maecenas mauris arcu, congue viverra quam sed, fermentum maximus lorem. Morbi maximus finibus dapibus. Nulla eu molestie massa, sed placerat lorem. Praesent et scelerisque ipsum. Praesent quis mi non ante venenatis lacinia non non eros. Ut sit amet urna ac sem porttitor ultricies at non velit. In pretium pharetra eros, sed venenatis tellus faucibus non. Integer consequat, nulla sit amet congue posuere, arcu purus porta mi, at posuere tortor felis ac est. Phasellus malesuada nulla a ipsum maximus euismod. Duis porttitor efficitur nisi at faucibus. Aliquam luctus quam non justo posuere consequat. Sed gravida pretium dui, sed interdum purus varius quis. Ut faucibus, nibh sit amet dignissim fringilla, magna est ullamcorper felis, eu euismod felis augue vitae mauris. Aenean augue urna, mollis fringilla tortor id, congue consequat lorem. Ut finibus placerat diam, sit amet blandit nibh consequat a. Sed nec varius quam, in laoreet magna. Morbi aliquet auctor lorem at consectetur. Etiam interdum velit ut dapibus viverra. Vivamus viverra gravida vulputate. Etiam lobortis consequat iaculis. Vivamus sed vulputate sem. Morbi eget fringilla quam, at dapibus lectus. Vestibulum auctor ultricies iaculis. Proin vehicula lacus at odio maximus condimentum. Mauris bibendum dui a cursus varius. Praesent vitae tellus libero. Donec pharetra lectus egestas sapien tincidunt, vel blandit ligula iaculis. Cras congue magna et turpis vehicula, sit amet porta magna interdum. Donec aliquet lectus tellus, nec placerat eros convallis non. Pellentesque imperdiet nunc sit amet laoreet fringilla. Sed tincidunt nulla ut enim aliquam tempor. Quisque risus ante, facilisis vel tincidunt vitae, dapibus eget sem. Vestibulum rhoncus magna suscipit enim placerat sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sagittis nisl vel diam congue, vitae pharetra elit lacinia. Duis in nunc at tortor aliquet porta.</p>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula tincidunt felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam congue nibh sapien, at vestibulum arcu faucibus a. Curabitur quis egestas nunc. Suspendisse faucibus, leo in fermentum convallis, diam nisl semper lorem, in semper mi lorem et dolor. Morbi consectetur magna sollicitudin, convallis diam eu, lacinia dui. Maecenas in neque pulvinar, lobortis ante ut, feugiat velit. Donec luctus, lectus sed placerat imperdiet, dolor elit imperdiet sapien, sit amet tincidunt urna elit eu lectus. Nam ac ante viverra libero imperdiet volutpat id in est. Donec congue tempus sem a fringilla. Praesent consequat quam tempor vehicula tempus. Maecenas mauris arcu, congue viverra quam sed, fermentum maximus lorem. Morbi maximus finibus dapibus. Nulla eu molestie massa, sed placerat lorem. Praesent et scelerisque ipsum. Praesent quis mi non ante venenatis lacinia non non eros. Ut sit amet urna ac sem porttitor ultricies at non velit. In pretium pharetra eros, sed venenatis tellus faucibus non. Integer consequat, nulla sit amet congue posuere, arcu purus porta mi, at posuere tortor felis ac est. Phasellus malesuada nulla a ipsum maximus euismod. Duis porttitor efficitur nisi at faucibus. Aliquam luctus quam non justo posuere consequat. Sed gravida pretium dui, sed interdum purus varius quis. Ut faucibus, nibh sit amet dignissim fringilla, magna est ullamcorper felis, eu euismod felis augue vitae mauris. Aenean augue urna, mollis fringilla tortor id, congue consequat lorem. Ut finibus placerat diam, sit amet blandit nibh consequat a. Sed nec varius quam, in laoreet magna. Morbi aliquet auctor lorem at consectetur. Etiam interdum velit ut dapibus viverra. Vivamus viverra gravida vulputate. Etiam lobortis consequat iaculis. Vivamus sed vulputate sem. Morbi eget fringilla quam, at dapibus lectus. Vestibulum auctor ultricies iaculis. Proin vehicula lacus at odio maximus condimentum. Mauris bibendum dui a cursus varius. Praesent vitae tellus libero. Donec pharetra lectus egestas sapien tincidunt, vel blandit ligula iaculis. Cras congue magna et turpis vehicula, sit amet porta magna interdum. Donec aliquet lectus tellus, nec placerat eros convallis non. Pellentesque imperdiet nunc sit amet laoreet fringilla. Sed tincidunt nulla ut enim aliquam tempor. Quisque risus ante, facilisis vel tincidunt vitae, dapibus eget sem. Vestibulum rhoncus magna suscipit enim placerat sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sagittis nisl vel diam congue, vitae pharetra elit lacinia. Duis in nunc at tortor aliquet porta. </p>
     </section>
-    <script src=js/jquery.js></script>
-    <script src="js/bootstrap.js"></script>
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src=https://code.jquery.com/jquery-3.1.1.min.js></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.nav-tabs a:first').tab('show');
+        });
+    </script>
 </body>
 
 </html>
