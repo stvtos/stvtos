@@ -1,5 +1,5 @@
 body {
-    background: url('../images/darkbg.jpg') repeat center center fixed;
+    background: rgba(0, 0, 0, 100)/* url('../images/darkbg.jpg') repeat center center fixed; */
 }
 
 .jumbotron {
